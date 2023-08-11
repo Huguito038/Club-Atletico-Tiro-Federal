@@ -9,7 +9,6 @@ import Teakwondo from './componentes/Actividades/Teakwondo/taekwondo';
 import Acrotelas from './componentes/Actividades/Acrotelas/acrotelas';
 import Pilates from './componentes/Actividades/Pilates/pilates';
 
-
 import './App.css';
 
 function App() {
