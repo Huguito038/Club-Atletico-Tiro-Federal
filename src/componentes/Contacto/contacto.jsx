@@ -1,7 +1,6 @@
 import stilo from "../Contacto/contacto.module.css"
 import {FaCaretLeft,FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaWhatsapp} from "react-icons/fa"
 import { Link } from "react-router-dom"
-import Pie from "../pie/pie"
 import logo from "../barra/escudo.jpg"
 
 

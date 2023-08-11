@@ -1,7 +1,5 @@
- import foto from "../mejoras/foto.jpg"
- import stilo from "../mejoras/mejoras.module.css"
- import {FaEye} from "react-icons/fa"
- import { Link } from "react-router-dom"
+import stilo from "../mejoras/mejoras.module.css"
+
 
 export default function Mejoras(){
     return(
