@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;600;700&display=swap');
+
+
+.info_foto{
+    display: flex;
+    font-family: 'Blinker', sans-serif;
+    font-size: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.info_foto h2{
+    width: 500px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: start;
+
+  
+}
+
+.contenedor{
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Blinker', sans-serif;
+    font-size: 40px;
+    padding-bottom: 50px;
+
+}
+
+
+.title{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+.contenedor_carnet{
+    width: 390px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease;
+}
+
+
+
+
+.frente{
+    position: absolute;
+    background-image: url("../Futbol/frente.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform:rotateY(0deg);
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+}
+
+.atras{
+    position: absolute;
+    background-image: url("../Futbol/atras.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+    
+}
+
+
+.contenedor_carnet:hover{
+    cursor: pointer;
+    transform: rotateY(-180deg);
+}

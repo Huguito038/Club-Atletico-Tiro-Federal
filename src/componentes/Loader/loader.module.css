@@ -1,0 +1,27 @@
+
+
+.triangulo{
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-left: 100vw solid transparent; /* 100% del ancho de la ventana */
+    border-bottom: 100vh solid #3991cf; /* 100% de la altura de la ventana */
+}
+
+.contenedor{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.img{
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
+    z-index: 10;
+}

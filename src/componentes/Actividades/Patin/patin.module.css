@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+.titu {
+    width: 100%;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin-top: -60px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px black
+  }
+  
+  .contenedor_info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1; /* Ocupa el espacio disponible verticalmente */
+    margin-top: -180px;
+  }
+  
+  .foto {
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./foto.jpeg");
+    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+  }
+  
+  .info h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 2px black
+  }
+  
+  .info h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  
+  .total_info {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .triangulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+    height: 120vh;
+    background-color: #3991cf;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    z-index: -1;
+  }

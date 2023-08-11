@@ -1,0 +1,41 @@
+.contenedor_carnet{
+    width: 390px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease;
+}
+
+
+
+
+.frente{
+    position: absolute;
+    background-image: url("./frente.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform:rotateY(0deg);
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.atras{
+    position: absolute;
+    background-image: url("./atras.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    border-radius: 5px;
+    
+}
+
+
+.contenedor_carnet:hover{
+    cursor: pointer;
+    transform: rotateY(-180deg);
+}
