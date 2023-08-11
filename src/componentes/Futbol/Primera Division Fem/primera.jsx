@@ -4,7 +4,7 @@ import video from "../Primera Division Fem/video.mp4"
 import React, { useState } from 'react';
 import foto from "../Primera Division Fem/foto.jpg"
 
-export default function Primera_Fem (){
+export default function PrimeraFem (){
     const [showVideo, setShowVideo] = useState(false);
 
     const toggleVideo = () => {

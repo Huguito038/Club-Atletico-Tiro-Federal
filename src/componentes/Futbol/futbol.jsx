@@ -6,8 +6,8 @@ import escudo_visita_inf from "../Futbol/escudo_visitante_inf.png"
 import {FaMapMarkerAlt,FaRegCalendarAlt,FaRegClock} from "react-icons/fa"
 import Primera from "./Primera Division/primera"
 import Reserva from "./Reserva/reserva"
-import Primera_Fem from "./Primera Division Fem/primera"
-import Reserva_Fem from "./Reserva Fem/reserva"
+import PrimeraFem from "./Primera Division Fem/primera"
+import ReservaFem from "./Reserva Fem/reserva"
 import { useState } from "react"
 
 
@@ -47,8 +47,8 @@ export default  function Futbol(){
             </div>
             <Primera></Primera>
             <Reserva></Reserva>
-            <Primera_Fem></Primera_Fem>
-            <Reserva_Fem></Reserva_Fem>
+            <PrimeraFem></PrimeraFem>
+            <ReservaFem></ReservaFem>
         </div>
         );
       }

@@ -4,7 +4,7 @@ import video from "../Reserva Fem/video.mp4"
 import React, { useState } from 'react';
 import foto from "../Reserva Fem/foto.jpg"
 
-export default function Reserva_Fem (){
+export default function ReservaFem (){
     const [showVideo, setShowVideo] = useState(false);
 
     const toggleVideo = () => {
