@@ -15,7 +15,7 @@ export default function Slider() {
     return (
         <div className={stilo.beneficios}>
             <h2 className={stilo.title_beneficio}>SUMATE Y OBTENE BENEIFCIOS</h2>
-            <h2 className={stilo.subtitlte_beneficio}>¡Conoce nuestros negocios amigos!</h2>
+            <h2 className={stilo.subtitlte_beneficio}>¡Conoce negocios amigos!</h2>
         <div className={stilo.slider}>
                 <div className={stilo.slider_track}>
                     <div className={stilo.slider_img}>
