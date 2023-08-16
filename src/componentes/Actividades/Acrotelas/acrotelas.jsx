@@ -1,6 +1,8 @@
 import Barra from "../../barra/barra";
 import stilo from "../Acrotelas/acrotelas.module.css"
 import Pie from "../../pie/pie";
+import { Link } from "react-router-dom";
+import { FaAngleLeft} from "react-icons/fa"
 
 
 export default function Acrotelas() {
@@ -8,6 +10,7 @@ export default function Acrotelas() {
     <div className={stilo.contenedor_total}>
       <div className={stilo.total_info}>
         <Barra></Barra>
+        <Link style={{textDecoration:"none"}}to="/actividades"><button className={stilo.boton_nav}><FaAngleLeft></FaAngleLeft>VOLVER</button></Link>
         <div className={stilo.titu}>
           <h2>ACROTELAS</h2>
         </div>

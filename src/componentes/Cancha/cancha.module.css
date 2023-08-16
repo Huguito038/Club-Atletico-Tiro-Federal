@@ -242,10 +242,12 @@
     .estadio_nav1{
         font-family: 'Blinker', sans-serif;
         letter-spacing: 5px;
+        display: block;
         font-size: 30px;
     }
     .estadio_nav{
         font-family: 'Blinker', sans-serif;
+        display: block;
         letter-spacing: 5px;
         font-size: 35px ;
         margin-top: -25px;
@@ -314,4 +316,35 @@
     }
 
 
+
 }
+
+@media (max-width: 417px) {
+    .contenedor_novedades img{
+        width: auto;
+        box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+        height: 250px;
+    
+    }
+    .titulares h2{
+    font-size: 27px;
+}
+.titu{
+    font-size: 40px;
+}
+    
+    .contenedor_novedades_izq img{
+        width: auto;
+        height: 250px;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+    
+    }
+}
+
+
+
+

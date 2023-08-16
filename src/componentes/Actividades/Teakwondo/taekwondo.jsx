@@ -1,6 +1,8 @@
 import Barra from "../../barra/barra";
 import stilo from "../Teakwondo/taekwondo.module.css"
 import Pie from "../../pie/pie";
+import { Link } from "react-router-dom";
+import { FaAngleLeft} from "react-icons/fa"
 
 
 export default function Teakwondo() {
@@ -8,10 +10,11 @@ export default function Teakwondo() {
     <div className={stilo.contenedor_total}>
       <div className={stilo.total_info}>
         <Barra></Barra>
+        <Link style={{textDecoration:"none"}}to="/actividades"><button className={stilo.boton_nav}><FaAngleLeft></FaAngleLeft>VOLVER</button></Link>
         <div className={stilo.titu}>
           <h2>TEAKWONDO</h2>
         </div>
-        <div className={stilo.triangulo}></div> {/* Triángulo como fondo */}
+        <div className={stilo.triangulo}></div>
         <div className={stilo.contenedor_info}>
           <div className={stilo.info}>
             <h2>Horarios:</h2>

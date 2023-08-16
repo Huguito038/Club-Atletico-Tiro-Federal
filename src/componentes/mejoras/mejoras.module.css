@@ -96,6 +96,7 @@
 
 
 @media (max-width: 768px) {
+
     .info_foto{
         display: block;
         font-family: 'Blinker', sans-serif;
@@ -127,7 +128,11 @@
     }
     
     .contenedor{
-        width: 100%;
+        width: 80%;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
         text-align: center;
         font-family: 'Blinker', sans-serif;
         font-size: 40px;
@@ -151,4 +156,24 @@
         transition: all 1.5s ease;
     }
 
+}
+
+@media (max-width: 425px) {
+    .title{
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px black;
+        font-size: 28px;
+    }
+    .contenedor{
+        width: 80%;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        font-family: 'Blinker', sans-serif;
+        font-size: 40px;
+        padding-bottom: 50px;
+    
+    }
 }
