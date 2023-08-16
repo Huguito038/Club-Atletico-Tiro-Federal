@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
 
 .contenedor{
     background: linear-gradient(#3991cf,#232d51);
@@ -65,10 +66,10 @@ justify-content: space-between;
 }
 
 .iconos{ 
-    font-size: 55px;
-    margin-right: 100px;
+    font-size: 35px;
+    margin-right: 20px;
     margin-top: 100px;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     width: 300px;
 }
@@ -106,10 +107,10 @@ justify-content: space-between;
     transition: 0.3s ease all;
 }
 
-.info h1{font-weight: 600;
+.info h1{font-weight: 500;
 font-size: 30px;}
 
-.info h3{font-weight: 500;
+.info h3{font-weight: 200;
 font-size: 15px;}
 
 
@@ -122,8 +123,8 @@ font-size: 15px;}
 
 .footer_logo{color: white;}
 
-.footer_cont h2{font-size: 10px;
-    font-family: 'Blinker', sans-serif;
+.footer_cont h2{font-size: 12px;
+    font-family: 'Caveat', cursive;
     color: white;
     font-weight: 200;
     margin-left: 10px;
@@ -137,3 +138,33 @@ font-size: 15px;}
     margin-bottom: 40px;
 }
 
+
+
+@media (max-width: 768px) {
+    .logotipos{
+        width: 55px;
+        transition: 0.5s ease all;
+        margin: 20px;
+        border-radius: 100px;
+        box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+    }
+    .sponsors{
+        color: white;
+        text-align: center;
+        margin-top: -40px;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px #232d51;
+    }
+    .contenedor_info{
+        display: none;
+    }
+    
+.img{
+    width: 90px;
+    margin-top: -40px;
+    align-items: center;
+    z-index: 30;
+    transition: 1.5s ease all;
+}
+}

@@ -24,9 +24,10 @@ export default function Patin() {
             <h2>Telefono de Contacto:</h2>
             <h4>3541 - 2343567</h4>
           </div>
-          <div className={stilo.foto}></div>
+          <div className={stilo.foto} ></div>
         </div>
       </div>
+      <div className={stilo.space_movile}></div>
 
       <Pie></Pie>
     </div>

@@ -1,9 +1,312 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 .contenedor_barra{
-width: 100%;
-height: 100vh;
-background-size: cover;}
+    background-image: url("./fondo.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;   
+    position: relative;}
+
+.contenedor_barra::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #232d51, rgba(0, 0, 0, 0));
+    z-index: 1; 
+  }
 
 
+.estadio1{
+    background: linear-gradient(to bottom,#1f2847,#20557a);
+    -webkit-background-clip: text;
+    color: transparent; 
+    margin-left: 30px;
+    z-index: 10;
+    font-size: 70px;
+    font-family: 'Blinker', sans-serif;
+}
+
+.estadio{
+    background: linear-gradient(to bottom,#475eaa,#46b1fd);
+    -webkit-background-clip: text;
+    color: transparent; 
+    margin-left: 30px;
+    margin-top: -40px;
+    z-index: 10;
+    font-size: 70px;
+    font-family: 'Blinker', sans-serif;
+}
+.nombre{
+    z-index: 10;
+}
+
+.contenedor_estadio{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    z-index: 10;
+}
+
+.contenedor_estadio img{
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+    
+}
+
+
+.barra{
+    width: 10px;
+    height: 170px;
+    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+    background: linear-gradient(#232d51,#3991cf);
+}
+
+.mejoras{
+    text-align: center;
+    position: relative;
+    background-color: #1f2847;
+    font-family: 'Blinker', sans-serif;
+    font-weight: 300;
+    background: linear-gradient(#3991cf,#232d51);
+    box-shadow: 0 4px 10px #0003, 0 5px 5px #00000024, 0 5px 2px -5px #0000001f;
+
+}
+
+.titu{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.loguito{
+    width: 170px;
+    position: absolute;
+    top: -70px;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+
+.mejoras h2{
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.img{
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: 1s ease all;
+    display: block;
+}
+
+
+.img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.contenedor_novedades{
+    display: flex;
+    color: white;
+    width: 100%;
+}
+
+.contenedor_novedades_izq{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.contenedor_novedades h2{
+    font-family: 'Blinker', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+}
+
+.contenedor_novedades_izq h2{
+    font-family: 'Blinker', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+}
+
+.contenedor_novedades h4{
+    font-family: 'Blinker', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.contenedor_novedades_izq h4{
+    font-family: 'Blinker', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.contenedor_novedades img{
+    width: auto;
+    box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+    height: 390px;
+
+}
+
+.contenedor_novedades_izq img{
+    width: auto;
+    height: 390px;
+    box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+    margin-left: 50px;
+
+}
+
+.titulares{
+    width: 50%;
+}
+
+.principal{
+    text-transform: uppercase;
+}
+
+.contenedor_maps{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.mapa_info{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.mapa{
+    width:300px,
+}
+
+.titu2{
+    text-align: center;
+    font-weight: 200;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px black;
+}
+
+@media (max-width: 768px) {
+    .contenedor_estadio{
+        display: none;
+    }
+
+    .contenedor_estadio img{
+        width: 100px;
+        height: 100px;
+        top: -20px;
+        left: 35%;
+        position: absolute;
+        display: none;
+        
+    }
+    .titu2{
+        font-size: 46px;
+    }
+    .estadio_nav1{
+        font-family: 'Blinker', sans-serif;
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+    .estadio_nav{
+        font-family: 'Blinker', sans-serif;
+        letter-spacing: 5px;
+        font-size: 35px ;
+        margin-top: -25px;
+        background: linear-gradient(to bottom,#475eaa,#46b1fd);
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+    
+    .loguito{
+        width: 100px;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .titu{
+        text-align: center;
+        font-weight: 200;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        margin-top: 15px;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 55px;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    .contenedor_novedades{
+        overflow: hidden;
+        display: block;
+        color: white;
+        width: 100%;
+    }
+    .contenedor_novedades_izq{
+        overflow: hidden;
+        display: block;
+        color: white;
+        width: 100%;
+    }
+    .titulares{
+        width: 100%;
+    }
+    .titulares h4{
+        display: none;
+    }
+    .titulares h2{
+        font-size: 32px;
+    }
+    .contenedor_novedades img{
+        width: auto;
+        box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+        height: 290px;
+    
+    }
+    
+    .contenedor_novedades_izq img{
+        width: auto;
+        height: 290px;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+    
+    }
+
+
+}

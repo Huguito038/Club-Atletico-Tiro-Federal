@@ -28,6 +28,7 @@ export default function Teakwondo() {
           <div className={stilo.foto}></div>
         </div>
       </div>
+      <div className={stilo.space_movile}></div>
 
       <Pie></Pie>
     </div>

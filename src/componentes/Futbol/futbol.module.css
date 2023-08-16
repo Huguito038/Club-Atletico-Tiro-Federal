@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
 
 .contenedor_partido{
     width: 800px;
-    height: 400px;
+    height: 430px;
     left: 0;
     right: 0;
+    border-radius: 20px;
     margin: auto;
     margin-top: 50px;
     font-size: 30px;
     position: relative;
-    border-radius: 15px;
+    box-shadow: 2px 4px 40px #0003, 0 8px 8px #00000024, 0 8px 4px -8px #0000001f;
 
 }
 .contenedor_partido::before {
     content: "";
     position: absolute;
     top: 0;
-    border-radius: 15px;
-    box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+    border-radius: 20px;
+    box-shadow: 2px 4px 40px #0003, 0 8px 8px #00000024, 0 8px 4px -8px #0000001f;
     right: 0;
     width: 0;
     height: 0;
     border-left: 800px solid transparent; /* Ajusta el tamaño del triángulo */
-    border-bottom: 400px solid #3991cf; /* Cambia el color del triángulo */
+    border-bottom: 430px solid #3991cf; /* Cambia el color del triángulo */
     z-index: -1; /* Para que el triángulo esté detrás del contenido */
 } 
 
@@ -42,8 +42,8 @@
 }
 
 .equipos img{
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
 }
 
 .equipos{
@@ -71,32 +71,33 @@
 }
 
 .titu{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Blinker', sans-serif;
+    font-weight: 200;
     text-align: center;
     text-shadow: 1px 1px 2px black;
-    padding-top: 15px;
+    padding-top: 19px;
 }
 
 .contenedor_botones{
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    position: relative;
 
 }
 
 
 .contenedor_botones button{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
     width: 150px;
     height: 50px;
     margin-left: 20px;
     background: linear-gradient(#3991cf,#232d51);
-    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
     border: none;
     color: white;
     font-size: 18px;
     transition: 1s ease all;
-    border-radius: 2px;
 }
 
 .contenedor_botones button:hover{
@@ -105,11 +106,109 @@
 }
 
 .subtitu{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 15px;
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
     text-align: center;
+    font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: -20px;
+    margin-top: -10px;
 
 }
+
+@media (max-width: 768px) {
+    .contenedor_partido{
+        width: 100%;
+        height: 330px;
+    }
+
+    .contenedor_partido::before {
+        display: none;
+    } 
+    .versus{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-top: -20px;}
+    
+    .versus h4{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .equipos img{
+        width: 55px;
+        height: 55px;
+    }
+    .equipos h3{
+        font-size: 20px;
+    }
+    .titu{
+        font-size: 35px;
+        font-family: 'Blinker', sans-serif;
+        font-weight: 200;
+        text-align: center;
+        text-shadow: 1px 1px 2px black;
+        padding-top: 19px;
+    }
+    
+    .equipos{
+        display: flex;
+        width: 350px;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    .info{
+        display: flex;
+        font-size: 8px;
+        align-items: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    
+    .fa{
+        color:#3991cf;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 25px;
+    }
+    
+    .titu{
+        font-family: 'Blinker', sans-serif;
+        font-weight: 200;
+        text-align: center;
+        text-shadow: 1px 1px 2px black;
+        padding-top: 19px;
+    }
+    
+    .contenedor_botones{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+    
+    }
+    
+    
+    .contenedor_botones button{
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 3px;
+        width: 135px;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: 20px;
+        background: linear-gradient(#3991cf,#232d51);
+        border: none;
+        color: white;
+        font-size: 18px;
+        transition: 1s ease all;
+    }
+    
+    
+    
+  
+  }

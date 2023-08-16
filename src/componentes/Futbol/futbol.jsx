@@ -1,15 +1,15 @@
 import Barra from "../barra/barra"
 import stilo from "../Futbol/futbol.module.css"
 import logo from "../barra/escudo.jpg"
-import escudo_visita from "../Futbol/escudo_visitante.png"
-import escudo_visita_inf from "../Futbol/escudo_visitante_inf.png"
 import {FaMapMarkerAlt,FaRegCalendarAlt,FaRegClock} from "react-icons/fa"
-import Primera from "./Primera Division/primera"
-import Reserva from "./Reserva/reserva"
-import PrimeraFem from "./Primera Division Fem/primera"
-import ReservaFem from "./Reserva Fem/reserva"
+import Categorias from "./Categorias/categorias"
 import { useState } from "react"
-
+import { URL_primeraM, URL_reservaM, primeraM, reservaM,URL_primeraF,primeraF, reservaF, URL_reservaF,rivalM} from "../data"
+import Pie from "../pie/pie"
+import Espacio from "../espacio"
+import { mayores,inferiores } from "../info_proximo"
+import { URL_cuarta,URL_quinta,URL_sexta,URL_septima,URL_octava,URL_novena,cuarta,quinta,sexta,septima,octava,novena,rival } from "../data_inferiores"
+import 'aos/dist/aos.css';
 
 export default  function Futbol(){
     const [selectedOption, setSelectedOption] = useState("mayores");
@@ -18,37 +18,37 @@ export default  function Futbol(){
         <div>
             <div>
                 <Barra></Barra>
-                <div className={stilo.contenedor_botones}>
-                <button onClick={() => setSelectedOption('inferiores')}>INFERIORES</button>
-                <button onClick={() => setSelectedOption('mayores')}>CAT. MAYORES</button>
-                </div>
                 <div className={stilo.contenedor_partido}>
                     <h2 className={stilo.titu}>PROXIMO PARTIDO</h2>
                     <h3 className={stilo.subtitu}>Categorias Mayores</h3>
                     <div className={stilo.versus}>
                         <div className={stilo.equipos}>
-                            <img src={logo} alt="" />
-                            <h3>Tiro Federal</h3>
+                            <img data-aos="zoom-in-up"data-aos-duration="1000" src={logo} alt="" />
+                            <h3 data-aos="zoom-in-up"data-aos-duration="1000">Tiro Federal</h3>
                         </div>
                         <h4>
                             VS
                         </h4>
                         <div className={stilo.equipos}>
-                            <h3>EMFI</h3>
-                            <img src={escudo_visita} alt="" />
+                            <h3 data-aos="zoom-in-up"data-aos-duration="1000">{mayores.rival}</h3>
+                            <img data-aos="zoom-in-up"data-aos-duration="1000"src={mayores.rival_img} alt="" />
                         </div>
                     </div>
                     <div className={stilo.info_versus}>
-                        <div className={stilo.info}><FaMapMarkerAlt className={stilo.fa}></FaMapMarkerAlt><h2>Club Atletico Tiro Federal - Cosquin</h2></div>
-                        <div className={stilo.info}><FaRegCalendarAlt className={stilo.fa}></FaRegCalendarAlt><h2>Domingo 20/08</h2></div>
-                        <div className={stilo.info}><FaRegClock className={stilo.fa}></FaRegClock><h2>12:00 HS  Inicio de Jornada</h2></div>
+                        <div className={stilo.info}><FaMapMarkerAlt className={stilo.fa}></FaMapMarkerAlt><h2>{mayores.lugar}</h2></div>
+                        <div className={stilo.info}><FaRegCalendarAlt className={stilo.fa}></FaRegCalendarAlt><h2>{mayores.dia}</h2></div>
+                        <div className={stilo.info}><FaRegClock className={stilo.fa}></FaRegClock><h2>{mayores.hora}</h2></div>
                     </div>     
                 </div>
             </div>
-            <Primera></Primera>
-            <Reserva></Reserva>
-            <PrimeraFem></PrimeraFem>
-            <ReservaFem></ReservaFem>
+            <div className={stilo.contenedor_botones}>
+                <button onClick={() => setSelectedOption('inferiores')}>INFERIORES</button>
+                <button onClick={() => setSelectedOption('mayores')}>CAT. MAYORES</button>
+            </div>
+            <Categorias data={URL_primeraM} info={primeraM} rival={rivalM}></Categorias>
+            <Categorias data={URL_reservaM} info={reservaM} rival={rivalM}></Categorias>
+            <Categorias data={URL_primeraF} info={primeraF} rival={rivalM}></Categorias>
+            <Categorias data={URL_reservaF} info={reservaF} rival={rivalM}></Categorias>
         </div>
         );
       }
@@ -57,33 +57,39 @@ export default  function Futbol(){
             <div>
             <div>
                 <Barra></Barra>
-                <div className={stilo.contenedor_botones}>
-                <button onClick={() => setSelectedOption('inferiores')}>INFERIORES</button>
-                <button onClick={() => setSelectedOption('mayores')}>CAT. MAYORES</button>
-                </div>
                 <div className={stilo.contenedor_partido}>
                     <h2 className={stilo.titu}>PROXIMO PARTIDO</h2>
                     <h3 className={stilo.subtitu}>Categorias Inferiores</h3>
                     <div className={stilo.versus}>
                         <div className={stilo.equipos}>
-                            <img src={logo} alt="" />
-                            <h3>Tiro Federal</h3>
+                            <img data-aos="zoom-in-up"data-aos-duration="1000"src={logo} alt="" />
+                            <h3 data-aos="zoom-in-up"data-aos-duration="1000">Tiro Federal</h3>
                         </div>
                         <h4>
                             VS
                         </h4>
                         <div className={stilo.equipos}>
-                            <h3>SPORTIVO RIVADAVIA</h3>
-                            <img src={escudo_visita_inf} alt="" />
+                            <h3 data-aos="zoom-in-up"data-aos-duration="1000">{inferiores.rival}</h3>
+                            <img data-aos="zoom-in-up"data-aos-duration="1000" src={inferiores.rival_img} alt="" />
                         </div>
                     </div>
                     <div className={stilo.info_versus}>
-                        <div className={stilo.info}><FaMapMarkerAlt className={stilo.fa}></FaMapMarkerAlt><h2>Club Atletico Tiro Federal - Cosquin</h2></div>
-                        <div className={stilo.info}><FaRegCalendarAlt className={stilo.fa}></FaRegCalendarAlt><h2>Sabado 12/08</h2></div>
-                        <div className={stilo.info}><FaRegClock className={stilo.fa}></FaRegClock><h2>09:00 HS  Inicio de Jornada</h2></div>
+                        <div className={stilo.info}><FaMapMarkerAlt className={stilo.fa}></FaMapMarkerAlt><h2>{inferiores.lugar}</h2></div>
+                        <div className={stilo.info}><FaRegCalendarAlt className={stilo.fa}></FaRegCalendarAlt><h2>{inferiores.dia}</h2></div>
+                        <div className={stilo.info}><FaRegClock className={stilo.fa}></FaRegClock><h2>{inferiores.hora}</h2></div>
                     </div>     
                 </div>
             </div>
+            <div className={stilo.contenedor_botones}>
+                <button className={stilo.boton} onClick={() => setSelectedOption('inferiores')}>INFERIORES</button>
+                <button className={stilo.boton} onClick={() => setSelectedOption('mayores')}>CAT. MAYORES</button>
+                </div>
+            <Categorias data={URL_cuarta} info={cuarta} rival={rival}></Categorias>
+            <Categorias data={URL_quinta} info={quinta} rival={rival}></Categorias>
+            <Categorias data={URL_sexta} info={sexta} rival={rival}></Categorias>
+            <Categorias data={URL_septima} info={septima} rival={rival} ></Categorias>
+            <Categorias data={URL_octava} info={octava} rival={rival}></Categorias>
+            <Categorias data={URL_novena} info={novena} rival={rival}></Categorias>
         </div>
         )
     }
@@ -91,6 +97,8 @@ export default  function Futbol(){
         <div className={stilo.contenedor}>
              {selectedOption === 'inferiores' && renderInferiores()}
              {selectedOption === 'mayores' && renderMayores()}
+             <Espacio></Espacio>
+             <Pie></Pie>
         </div>   
     )
 }

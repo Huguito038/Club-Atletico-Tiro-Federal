@@ -2,14 +2,17 @@ import stilo from "../Contacto/contacto.module.css"
 import {FaCaretLeft,FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaWhatsapp} from "react-icons/fa"
 import { Link } from "react-router-dom"
 import logo from "../barra/escudo.jpg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Contacto(){
+    AOS.init();
     return(
         <div>
              <div className={stilo.contenedor}>
-            <div className={stilo.barra}>
-                <img src={logo} alt="" />
+                <div data-aos="fade-right" className={stilo.barra}>
+                <img className={stilo.img} src={logo} alt="" />
                 <div className={stilo.linea_titu}>
                     <div className={stilo.linea}></div>
                     <div className={stilo.titu}>¡ponete en contacto <br /> con nosotros!</div>
@@ -23,7 +26,7 @@ export default function Contacto(){
                     </button>
                 </Link>
             </div>
-            <div className={stilo.contacto_contendeor}>
+            <div data-aos="zoom-in" className={stilo.contacto_contendeor}>
                 <div className={stilo.contacto_up}>
                     <FaMapMarkerAlt></FaMapMarkerAlt>
                     <h2>San Martin 1041 | Cosquin , Cordoba</h2>

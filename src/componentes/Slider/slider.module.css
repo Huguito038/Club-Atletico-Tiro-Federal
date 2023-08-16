@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
 
 .slider{
     background-color: rgba(255, 255, 255, 0);
@@ -64,10 +65,10 @@ box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
 }
 
 .subtitlte_beneficio{
-    font-family: 'Blinker', sans-serif;
-    font-size: 22px;
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
     margin-top: -50px;
-    color: rgba(255, 255, 255, 0.788);
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     font-weight: 400;
     text-shadow: 1px 1px 2px black;
@@ -92,3 +93,51 @@ box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
     border-bottom: 87vh solid transparent; /* Cambia el color del triángulo */
     z-index: -1; /* Para que el triángulo esté detrás del contenido */
 } 
+
+@media (max-width: 768px) {
+    .slider_img{
+        width: 100px;
+        transition: 1s ease all;
+    }
+    @keyframes scroll{
+        0% {
+            -webkit-transform: translteX(0);
+            transform: translateX(0);
+        } 
+        100% {
+            -webkit-transform: translteX(calc(-100px * 10));
+            transform: translateX(calc(-100px * 10));
+        } 
+    
+    }
+    .slider_track{
+        display: flex;
+        animation: scroll 30s linear infinite;
+        width: calc(100px*20);
+        height: 300px;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-animation: scroll 30s linear infinite ;
+        margin-top: -80px;
+    }
+    .title_beneficio{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 44px;
+        margin-top: 50px;
+        color: white;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    }
+    
+    .subtitlte_beneficio{
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: 50px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-shadow: 1px 1px 2px black;
+        
+    
+    }
+
+}

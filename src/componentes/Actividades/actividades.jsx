@@ -6,8 +6,11 @@ import patin from "../Actividades/Patin/foto.jpeg"
 import taekwondo from "../Actividades/Teakwondo/foto.jpg"
 import telas from "../Actividades/Acrotelas/foto.jpg"
 import pilates from "../Actividades/Pilates/foto.jpg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Actividades (){
+    AOS.init();
     
     return (
             <div>
@@ -15,13 +18,12 @@ export default function Actividades (){
                     <Barra></Barra>
                     <div className={stilo.titulos}>      
                         <h2>ACTIVIDADES</h2>
-                        <h3>¡Veni a Tiro y disfruta en familia!</h3> 
+                        <h3>¡Sumate a Tiro y disfruta en familia!</h3> 
                      </div> 
                 </div>
                 <div className={stilo.actividades}>
-                   
                     <Link to="/actividades/teakwondo">
-                        <div className={stilo.cont_deporte}>
+                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={taekwondo} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>TEAKWONDO</h2>
@@ -29,7 +31,7 @@ export default function Actividades (){
                         </div>
                     </Link>
                     <Link to="/actividades/acrotelas">
-                        <div className={stilo.cont_deporte}>
+                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={telas} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>ACROTELAS</h2>
@@ -37,7 +39,7 @@ export default function Actividades (){
                         </div>
                     </Link>
                     <Link to="/actividades/pilates">
-                        <div className={stilo.cont_deporte}>
+                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={pilates} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>PILATES</h2>
@@ -45,7 +47,7 @@ export default function Actividades (){
                         </div>
                     </Link>
                     <Link to="/actividades/patin">
-                        <div className={stilo.cont_deporte}>
+                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={patin} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>PATIN</h2>

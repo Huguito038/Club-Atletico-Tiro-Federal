@@ -12,8 +12,6 @@ import Pilates from './componentes/Actividades/Pilates/pilates';
 import './App.css';
 
 function App() {
-
-
   return (
     <div className='App'>
        <Routes>

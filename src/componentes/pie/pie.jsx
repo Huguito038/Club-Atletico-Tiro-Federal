@@ -11,15 +11,16 @@ import villamar from "../Slider/logo_7.png"
 import morresi from "../Slider/logo_8.png"
 import bakeria from "../Slider/logo_9.jpg"
 import farmacia from "../Slider/logo_10.png"
+import React from 'react';
 
  
 
 export default function Pie() {
+
     return (
        <div className={stilo.contenedor}>
          <img  className={stilo.img} src={logo} alt="" />
             <div className={stilo.sponsors}>
-                <h2>NUESTROS SPONSORS</h2>
                     <div className={stilo.logos}>
                             <img src={tucan} alt="" className={stilo.logotipos} />
                             <img src={modo_fit} alt="" className={stilo.logotipos} />
@@ -49,7 +50,7 @@ export default function Pie() {
         </div>
         <div className={stilo.footer_cont}> 
              <FaCode className={stilo.footer_logo}></FaCode>
-            <h2>coded by HUGO SOLER</h2>
+            <h2>coded by ACHEESE</h2>
         </div>
        </div>
    )}

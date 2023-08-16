@@ -18,9 +18,10 @@ align-items: center;
 position: sticky;
 top:0;
 width: 100%;
-z-index: 10;
+z-index: 50;
 background: linear-gradient(#3991cf,#232d51bb);
 box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+
 
 }
 
@@ -49,7 +50,7 @@ color: white;
     background-color: white;
     height: 60px;
     width: 0.2px;
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 .contenedor_botones{
@@ -77,3 +78,105 @@ color: white;
     cursor: pointer;
 }
 
+.navbar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    font-weight: 800;
+    background-color: #000000;
+    transition: left 0.3s;
+    display: none;
+    align-items: flex-start;
+    
+  }
+  
+  .open {
+    left: 0;
+  }
+  
+  .toggleButton {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+  }
+  
+  .navMenu {
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  
+  .navMenu ul {
+    list-style: none;
+    padding: 10px;
+
+  }
+  .logo_nav{
+    display: none;
+  }
+  .navMenu li {
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: 'Blinker', sans-serif;
+  }
+  
+  .navMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        left: -100%;
+        background-color: #111111;
+        display: block;
+      }
+    .toggleButton {
+        background: none;
+        border: none;
+        margin-top: 0px;
+        margin-left: 20px;
+        cursor: pointer;
+        padding: 10px;
+        display: block;
+      }
+    .bar_{
+        display: block;
+        width: 24px;
+        height: 4px;
+        margin: 4px auto;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .bar {
+        display: block;
+        width: 26px;
+        height: 5px;
+        margin: 5px auto;
+        background-color: rgb(79, 195, 248);
+      }
+    .logo_nav{
+        display: block;
+        position: absolute;
+        width: 60px;
+        margin: 45%;
+      }
+    
+      .open {
+        left: 0;
+      }
+    .contenedor{height: 60px;}
+
+    .club{display: none;}
+    .contenedor_botones{display: none;}
+
+}

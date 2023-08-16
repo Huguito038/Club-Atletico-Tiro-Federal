@@ -9,13 +9,18 @@ import villamar from "./logo_7.png"
 import morresi from "./logo_8.png"
 import bakeria from "./logo_9.jpg"
 import farmacia from "./logo_10.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Slider() {
+    AOS.init();
     return (
         <div className={stilo.beneficios}>
-            <h2 className={stilo.title_beneficio}>SUMATE Y OBTENE BENEIFCIOS</h2>
-            <h2 className={stilo.subtitlte_beneficio}>¡Conoce negocios amigos!</h2>
+            <div  data-aos="fade-right">
+                <h2 className={stilo.title_beneficio}>SUMATE Y OBTENE BENEIFCIOS</h2>
+            </div>
+            <h2 data-aos="zoom-out-down" className={stilo.subtitlte_beneficio}>¡Conoce nuestros comercios amigos!</h2>
         <div className={stilo.slider}>
                 <div className={stilo.slider_track}>
                     <div className={stilo.slider_img}>
@@ -48,9 +53,6 @@ export default function Slider() {
                     <div className={stilo.slider_img}>
                         <img src={farmacia} alt="" className={stilo.imagen_slider}/>
                     </div>
-                   
-                   
-
                 </div>
          </div>
         </div>

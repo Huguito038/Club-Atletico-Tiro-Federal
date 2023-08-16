@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+
+
+.titu{font-size: 70px;
+    background: linear-gradient(to right, #3991cf,#232d51);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.linea{
+    width: 250px;
+    height: 8px;
+    background: linear-gradient(to right,#232d51, #3991cf);
+}
+
+
+
+.contenedor_titulo{
+    display: flex;
+    align-items: center;
+    font-family: 'Blinker', sans-serif;
+}
+
+.contenedor_resultado{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(#3991cf,#232d51);
+    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+}
+
+.equipos{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+}
+
+.equipos h3{
+    font-weight: 300;
+    font-size: 30px;
+    margin-left: 40px;
+    font-family: 'Blinker', sans-serif;
+    margin-right: 40px;
+    color: white;
+
+}
+
+.image{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.goles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.goles p{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titulo_resu{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin-top: -30px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.contenedor{overflow: hidden;}
+
+
+@media (max-width: 768px) {
+    .titu{font-size: 40px;
+        width: 100%;
+        background: linear-gradient(to right, #3991cf,#232d51);
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+    
+    .linea{
+        width: 150px;
+        height: 4px;
+        background: linear-gradient(to right,#232d51, #3991cf);
+    }
+    
+    .contenedor_titulo{
+        display: flex;
+        align-items: center;
+        font-family: 'Blinker', sans-serif;
+    }
+    
+    .contenedor_resultado{
+        display: flex;
+        width: 100%;
+        background: linear-gradient(#3991cf,#232d51);
+        box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+    }
+  
+    .equipos h3{
+        font-weight: 300;
+        font-size: 21px;
+        margin-left: 0px;
+        font-family: 'Blinker', sans-serif;
+        margin-right: 0px;
+        color: white;
+    
+    }
+    
+    .image{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .goles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    .goles p{
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+
+}
