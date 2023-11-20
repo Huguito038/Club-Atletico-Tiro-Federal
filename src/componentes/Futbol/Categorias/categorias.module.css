@@ -82,6 +82,10 @@
 
 .contenedor{overflow: hidden;}
 
+.splides{
+    width: 100%;
+    height: 100%;
+}
 
 @media (max-width: 768px) {
     .titu{font-size: 40px;
@@ -141,3 +145,5 @@
     
 
 }
+
+

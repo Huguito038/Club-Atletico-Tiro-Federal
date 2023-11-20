@@ -12,36 +12,8 @@
     cursor: pointer;
 }
 
-.triang::after {
-    border-width: 0 0 530px 80px;
-    border-color: transparent transparent #fffcfc transparent;
-    right: 0px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    content: '';
-    position: absolute;
-    top: -5px;
-    display: block;
-    z-index: 100;
-  }
-  
-.triang::before{
-    width: 0;
-    height: 0;
-    border-style: solid;
-    content: '';
-    position: absolute;
-    top: -5px;
-    display: block;
-    z-index: 100;
-    border-width: 530px 80px 0 0;
-    border-color: #ffffff transparent transparent transparent;
-    left: 0;
-}
- 
+
 .conte{
-    margin-left: 60px;
     position: relative;
 
 }

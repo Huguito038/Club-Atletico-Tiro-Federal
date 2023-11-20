@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 export default function Categorias ({data,info,rival}){
     return(
-        <div data-aos="fade-right"data-aos-duration="2500" className={stilo.contenedor}>
+        <div data-aos="fade-right"data-aos-duration="1500" className={stilo.contenedor}>
             <div className={stilo.contenedor_titulo}>
                 <div className={stilo.linea}></div>
                 <h2 className={stilo.titu}>{info.titulo}</h2>
@@ -30,7 +30,7 @@ export default function Categorias ({data,info,rival}){
                 </div>
 
             </div>
-                <Splides url={data}></Splides>
+                <Splides className={stilo.splides} data={data}></Splides>
         </div>
     )
 };

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 
 
-export default function Splides({url}){
+export default function Splides({data}){
     AOS.init();
     return(
         <div className={stilo.conte}>
@@ -19,18 +19,15 @@ export default function Splides({url}){
                 perPage:1,
                 drag:true,
                 interval:3000,
+                width:"100%",
                 rewind: true,
-                width:1200,
-                arrows: false, // Show arrows
+                arrows: false,
                 pagination: true, // Show pagination dots
                 gap  :'1rem',
                 } } aria-label="My Favorite Images">
-                {url.map((item,index)=>(
+                {data?.map((path,index)=>(
                      <SplideSlide key={index} >
-                        <div className={stilo.triang}>
-                            <img className={stilo.img} src={item.url} alt="" />
-                        </div>
-                       
+                        <img className={stilo.img} src={path} alt="" />
                     </SplideSlide>
                 ))}
             </Splide>
@@ -45,17 +42,14 @@ export default function Splides({url}){
                     drag:true,
                     interval:3000,
                     rewind: true,
-                    width:1300,
+                    width:"100%",
                     arrows: true, // Show arrows
                     pagination: false, // Show pagination dots
                     gap  :'1rem',
                     } } aria-label="My Favorite Images">
-                    {url.map((item,index)=>(
+                    {data?.map((path,index)=>(
                         <SplideSlide key={index} >
-                            <div className={stilo.triang}>
-                                <img className={stilo.img} src={item.url} alt="" />
-                            </div>
-                        
+                            <img className={stilo.img} src={path} alt="" />
                         </SplideSlide>
                     ))}
                 </Splide>

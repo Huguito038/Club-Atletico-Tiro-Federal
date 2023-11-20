@@ -63,7 +63,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .contenedor{
         background-image: url(./fondo.jpeg);
         width: 100%;
@@ -73,8 +73,30 @@
         position: relative;
         overflow: hidden;
     }
-    .cont{
-        display: none;          
+    .cont img{
+        width: 200px;
+        height: 200px;
+        margin-bottom: -20px;
+        margin-left: 40%;
+                
     }
 
+    .cont{
+        display: block;
+       
+    }
+
+    .club{
+        text-align: center;
+        margin-left: 8vw;
+        
+    }
+    .contenedor h2{
+        margin-left: 00px;
+       
+    }
+    
+    .contenedor h3{
+        margin-left: 0px;
+    }
 }

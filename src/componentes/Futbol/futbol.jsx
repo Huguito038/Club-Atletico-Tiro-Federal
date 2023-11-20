@@ -4,12 +4,14 @@ import logo from "../barra/escudo.jpg"
 import {FaMapMarkerAlt,FaRegCalendarAlt,FaRegClock} from "react-icons/fa"
 import Categorias from "./Categorias/categorias"
 import { useState } from "react"
-import { URL_primeraM, URL_reservaM, primeraM, reservaM,URL_primeraF,primeraF, reservaF, URL_reservaF,rivalM} from "../data"
+import {primeraM,reservaM,primeraF, reservaF,rivalM} from "../data"
 import Pie from "../pie/pie"
 import Espacio from "../espacio"
 import { mayores,inferiores } from "../info_proximo"
 import { URL_cuarta,URL_quinta,URL_sexta,URL_septima,URL_octava,URL_novena,cuarta,quinta,sexta,septima,octava,novena,rival } from "../data_inferiores"
 import 'aos/dist/aos.css';
+
+
 
 export default  function Futbol(){
     const [selectedOption, setSelectedOption] = useState("mayores");
@@ -45,10 +47,10 @@ export default  function Futbol(){
                 <button onClick={() => setSelectedOption('inferiores')}>INFERIORES</button>
                 <button onClick={() => setSelectedOption('mayores')}>CAT. MAYORES</button>
             </div>
-            <Categorias data={URL_primeraM} info={primeraM} rival={rivalM}></Categorias>
-            <Categorias data={URL_reservaM} info={reservaM} rival={rivalM}></Categorias>
-            <Categorias data={URL_primeraF} info={primeraF} rival={rivalM}></Categorias>
-            <Categorias data={URL_reservaF} info={reservaF} rival={rivalM}></Categorias>
+            <Categorias data={primeraM.fotos} info={primeraM} rival={rivalM}></Categorias>
+            <Categorias data={reservaM.fotos} info={reservaM} rival={rivalM}></Categorias>
+            <Categorias data={primeraF.fotos} info={primeraF} rival={rivalM}></Categorias>
+            <Categorias data={reservaF.fotos} info={reservaF} rival={rivalM}></Categorias>
         </div>
         );
       }
@@ -84,12 +86,12 @@ export default  function Futbol(){
                 <button className={stilo.boton} onClick={() => setSelectedOption('inferiores')}>INFERIORES</button>
                 <button className={stilo.boton} onClick={() => setSelectedOption('mayores')}>CAT. MAYORES</button>
                 </div>
-            <Categorias data={URL_cuarta} info={cuarta} rival={rival}></Categorias>
-            <Categorias data={URL_quinta} info={quinta} rival={rival}></Categorias>
-            <Categorias data={URL_sexta} info={sexta} rival={rival}></Categorias>
-            <Categorias data={URL_septima} info={septima} rival={rival} ></Categorias>
-            <Categorias data={URL_octava} info={octava} rival={rival}></Categorias>
-            <Categorias data={URL_novena} info={novena} rival={rival}></Categorias>
+            <Categorias data={quinta.fotos} info={cuarta} rival={rival}></Categorias>
+            <Categorias data={cuarta.fotos} info={quinta} rival={rival}></Categorias>
+            <Categorias data={sexta.fotos} info={sexta} rival={rival}></Categorias>
+            <Categorias data={septima.fotos} info={septima} rival={rival} ></Categorias>
+            <Categorias data={octava.fotos} info={octava} rival={rival}></Categorias>
+            <Categorias data={novena.fotos} info={novena} rival={rival}></Categorias>
         </div>
         )
     }

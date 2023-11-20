@@ -20,8 +20,10 @@ export default function Cancha (){
                         <h2 className={stilo.estadio1}>ESTADIO</h2>
                         <h2 className={stilo.estadio}>KURIAKI ROSALES</h2> 
                     </div>
+                   
                 </div>     
                 </div>
+                <svg className={stilo.wave} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,256L60,224C120,192,240,128,360,133.3C480,139,600,213,720,224C840,235,960,181,1080,138.7C1200,96,1320,64,1380,48L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                           
             </div> 
             <div className={stilo.contenedor_maps}>
@@ -39,7 +41,7 @@ export default function Cancha (){
                     <div className={stilo.titulares}>
                         <h2 className={stilo.principal}>Nueva Tribuna</h2>
                         <h4>Es con gran emoción y orgullo que anunciamos la creación de una emocionante adición a nuestro amado club de fútbol de pueblo. Como testigos del constante crecimiento y apoyo de nuestra comunidad, es un honor presentar la inauguración de la "Tribuna Alba", una nueva zona de aliento y pasión en nuestro estadio que sin duda elevará la experiencia futbolística de todos nuestros aficionados.
-                        Que la inauguración de esta tribuna sea el comienzo de una era dorada para nuestro Club de Fútbol y un símbolo de nuestro compromiso constante con la excelencia deportiva. En cada asiento, en cada paso hacia arriba, se escribirá la historia de nuestro amor por el fútbol y por nuestra comunidad.
+                    
                         </h4>
                     </div>
                     <img src="https://i.ibb.co/DY1JR7P/Imagen-de-Whats-App-2023-08-14-a-las-17-39-33.jpg" alt="" />
@@ -48,13 +50,13 @@ export default function Cancha (){
                     <img src="https://i.ibb.co/G7D9vxy/Imagen-de-Whats-App-2023-08-14-a-las-17-39-29.jpg" alt="" />
                     <div className={stilo.titulares}>
                         <h2 className={stilo.principal}>Mejoramos el ingreso a nuestra cancha</h2>
-                        <h4>Queremos que cada vez que cruces ese portón y pises el adoquinado, sientas la emoción y el orgullo de ser parte de la familia del Club Tiro Federal. Estas mejoras no solo mejoran la apariencia, sino que también reflejan nuestro compromiso constante de brindarte experiencias inolvidables y de la más alta calidad.Te invitamos a unirte a nosotros para disfrutar de esta emocionante temporada en un ambiente que celebra el fútbol, la comunidad y la excelencia. Ya sea que nos visites como aficionado de toda la vida o como nuevo seguidor, te aseguramos que cada instante en el Club Tiro Federal será un recuerdo digno de compartir.</h4>
+                        <h4>Queremos que cada vez que cruces ese portón y pises el adoquinado, sientas la emoción y el orgullo de ser parte de la familia del Club Tiro Federal. Estas mejoras no solo mejoran la apariencia, sino que también reflejan nuestro compromiso constante de brindarte experiencias inolvidables.</h4>
                     </div>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000"className={stilo.contenedor_novedades}>
                     <div className={stilo.titulares}>
                         <h2 className={stilo.principal}>Nuevos bancos de suplentes</h2>
-                        <h4>Es un honor para nosotros anunciar que los bancos de suplentes han sido completamente renovados y mejorados para ofrecer la comodidad y el soporte que nuestros equipos merecen. Cada asiento ha sido diseñado pensando en el bienestar de nuestros jugadores, brindándoles el espacio y la ergonomía necesarios para enfocarse en el juego y en su desempeño. Estos nuevos bancos de suplentes no solo son un lugar para esperar el momento de entrar en acción, sino un reflejo de nuestra dedicación para brindar el mejor entorno posible para el desarrollo del talento y el espíritu de equipo. Cada jugador sentirá el apoyo y la importancia que merece, contribuyendo a elevar el rendimiento y la moral en cada partido.</h4>
+                        <h4>Es un honor para nosotros anunciar que los bancos de suplentes han sido completamente renovados y mejorados para ofrecer la comodidad y el soporte que nuestros equipos merecen. Cada asiento ha sido diseñado pensando en el bienestar de nuestros jugadores, brindándoles el espacio.</h4>
                     </div>
                     <img src="https://i.ibb.co/tDJcwnh/bancos.jpg" alt="" />
                 </div>

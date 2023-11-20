@@ -12,6 +12,14 @@
     background-position: center;   
     position: relative;}
 
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .contenedor_barra::after {
     content: "";
     position: absolute;
@@ -86,10 +94,10 @@
     font-weight: 200;
     margin-bottom: 100px;
     padding-top: 100px;
-    margin-top: 15px;
+    margin-top: 2.5vh;
     text-transform: uppercase;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
+    font-size: 6vw;
     color: white;
     text-shadow: 1px 1px 2px black;
 }
@@ -141,18 +149,18 @@
 .contenedor_novedades h2{
     font-family: 'Blinker', sans-serif;
     text-shadow: 1px 1px 2px black;
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 .contenedor_novedades_izq h2{
     font-family: 'Blinker', sans-serif;
     text-shadow: 1px 1px 2px black;
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 .contenedor_novedades h4{
     font-family: 'Blinker', sans-serif;
-    font-size: 19px;
+    font-size: 1.9vw;
     font-weight: 100;
     margin-left: 60px;
     margin-right: 60px;
@@ -160,7 +168,7 @@
 
 .contenedor_novedades_izq h4{
     font-family: 'Blinker', sans-serif;
-    font-size: 20px;
+    font-size: 1.9vw;
     font-weight: 100;
     margin-left: 60px;
     margin-right: 60px;
@@ -169,13 +177,13 @@
 .contenedor_novedades img{
     width: auto;
     box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
-    height: 390px;
+    height: 30vw;
 
 }
 
 .contenedor_novedades_izq img{
     width: auto;
-    height: 390px;
+    height: 30vw;
     box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
     margin-left: 50px;
 
@@ -222,9 +230,30 @@
 .estadio_nav{
     display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .contenedor_estadio{
-        display: none;
+        display: block;
+    }
+    .estadio1{
+        color: rgb(255, 255, 255); 
+        margin-left: 25vw;
+        z-index: 10;
+        margin-top: 35vh;
+        font-size: 15vw;
+        text-shadow: 2px 2px 5px black;
+        font-family: 'Blinker', sans-serif;
+    }
+    
+    .estadio{
+        background: linear-gradient(to bottom,#475eaa,#46b1fd);
+        -webkit-background-clip: text;
+        color: transparent; 
+        margin-left: 30px;
+        margin-top: -5vh;
+        z-index: 10;
+        font-size: 12vw;
+        font-family: 'Blinker', sans-serif;
+        
     }
 
     .contenedor_estadio img{
@@ -237,13 +266,13 @@
         
     }
     .titu2{
-        font-size: 46px;
+        font-size: 6vh;
     }
     .estadio_nav1{
         font-family: 'Blinker', sans-serif;
         letter-spacing: 5px;
         display: block;
-        font-size: 30px;
+        font-size: 3vh;
     }
     .estadio_nav{
         font-family: 'Blinker', sans-serif;
@@ -272,7 +301,7 @@
         margin-top: 15px;
         text-transform: uppercase;
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 55px;
+        font-size: 8vh;
         color: white;
         text-shadow: 1px 1px 2px black;
     }
@@ -284,6 +313,7 @@
     }
     .contenedor_novedades_izq{
         overflow: hidden;
+        height: 35vh;
         display: block;
         color: white;
         width: 100%;
@@ -306,8 +336,9 @@
     
     .contenedor_novedades_izq img{
         width: auto;
+        position: absolute;
         height: 290px;
-        top: 0;
+        top:8vh;
         right: 0;
         left: 0;
         margin: auto;

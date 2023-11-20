@@ -77,11 +77,11 @@
         margin-bottom: 100px;
     }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .titulos{
         font-size: 20px;
         margin-left: 30px;
-        margin-top: -20px;
+        padding-top: 140px;
         font-family: 'Bebas Neue', sans-serif;
         margin-bottom: 80px;
         text-shadow: 1px 1px 2px #232d51;

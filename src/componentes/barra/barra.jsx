@@ -56,7 +56,7 @@ export default function Barra() {
             <div className={stilo.contenedor_botones}>
                 <Link  to="/"><button className={stilo.boton}>INICIO</button></Link>
                 <Link  to="/actividades"><button className={stilo.boton}>ACTIVIDADES</button></Link>
-                <Link  to="/cancha"><button className={stilo.boton}>CANCHA</button></Link>
+                <Link  to="/cancha"><button className={stilo.boton}>CaNCHA</button></Link>
                 <Link  to="/futbol"><button className={stilo.boton}>FUTBOL</button></Link>
                 <Link  to="/contacto"><button className={stilo.boton}>CONTACTO</button></Link>
             </div>     
