@@ -8,7 +8,7 @@ import {primeraM,reservaM,primeraF, reservaF,rivalM} from "../data"
 import Pie from "../pie/pie"
 import Espacio from "../espacio"
 import { mayores,inferiores } from "../info_proximo"
-import { URL_cuarta,URL_quinta,URL_sexta,URL_septima,URL_octava,URL_novena,cuarta,quinta,sexta,septima,octava,novena,rival } from "../data_inferiores"
+import { cuarta,quinta,sexta,septima,octava,novena,rival } from "../data_inferiores"
 import 'aos/dist/aos.css';
 
 
