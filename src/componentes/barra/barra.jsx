@@ -36,13 +36,14 @@ export default function Barra() {
                     <span className={stilo.bar}></span>
                 </button>
                 <nav className={stilo.navMenu}>
-                    <ul>
-                        <li><Link to="/">Inicio</Link></li>
-                        <li><Link to="/actividades">ACTIVIDAES</Link></li>
-                        <li><Link to="/cancha">cancha</Link></li>
-                        <li><Link to="/futbol">futbol</Link></li>
-                        <li><Link to="/contacto">Contacto</Link></li>
+                    <ul onClick={toggleMenu}>
+                        <Link to="/"><li>INICIO</li></Link>
+                        <Link to="/actividades"><li>ACTIVIDADES</li></Link>
+                        <Link to="/cancha"><li>cancha</li></Link>
+                        <Link to="/futbol"><li>futbol</li></Link>
+                        <Link to="/contacto"><li>Contacto</li></Link>
                     </ul>
+                    <img src={escudo} alt="" className={stilo.escudo_nav}/>
                 </nav>
             </div>
                 <div className={stilo.club}>

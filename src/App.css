@@ -14,7 +14,7 @@
     background: #555; /* Color del thumb en hover */
   }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   ::-webkit-scrollbar {
     width: 0px;}
 

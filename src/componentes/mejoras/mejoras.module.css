@@ -149,8 +149,8 @@
         right: 0;
         left: 0;
         margin: auto;
-        width: 320px;
-        height: 210px;
+        width: 200px;
+        height: 130px;
         position: relative;
         transform-style: preserve-3d;
         transition: all 1.5s ease;

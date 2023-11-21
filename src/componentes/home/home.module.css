@@ -6,6 +6,7 @@
     width: 100vw;
     height: 100vh;
     background-size: cover;
+    overflow: hidden;
     background-position: center;   
     position: relative;
 }
@@ -84,23 +85,47 @@
 
     .cont{
         display: block;
+        width: 100vw;
        
     }
 
     .club{
-        text-align: center;
-        margin-left: -2vw;
-        margin-bottom: 8vh;
-        
+        margin-left: -6vw;
+        margin-bottom: 10vh;
     }
     .contenedor h2{
-        font-size: 10vw;
+        font-size: 8vw;
         margin-left: 00px;
        
     }
     
     .contenedor h3{
-        font-size: 15vw;
+        
+        font-size: 14vw;
         margin-left: 0px;
     }
+}
+
+@media (max-height: 320px){
+    .contenedor{
+        height: 100vh;
+        background-size: cover;
+        background-position: center;   
+        position: relative;
+        overflow: hidden;
+    }
+    .contenedor h2{
+        font-size: 8vh;
+        margin-left: 00px;
+    }
+    .contenedor h3{
+        font-size: 15vh;
+        margin-left: 0px;
+    }
+    .club{
+        margin-left: -2vw;
+        margin-bottom: 10vw;
+    }
+
+
 }
