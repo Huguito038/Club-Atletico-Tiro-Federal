@@ -3,6 +3,8 @@ import stilo from "../barra/barra.module.css"
 import { Link } from "react-router-dom"
 import React from 'react';
 import { useState,useEffect} from "react";
+import { CiMenuBurger } from "react-icons/ci";
+import { TfiClose } from "react-icons/tfi";
 
 
 export default function Barra() {
@@ -24,16 +26,12 @@ export default function Barra() {
     return (
     <div className={stilo.contenedor}>
             <button className={stilo.toggleButton} onClick={toggleMenu}>
-                    <span className={stilo.bar_}></span>
-                    <span className={stilo.bar_}></span>
-                    <span className={stilo.bar_}></span>
+                <CiMenuBurger />
             </button>
             <img className={stilo.logo_nav} src={escudo} alt="" />
             <div className={`${stilo.navbar} ${isMenuOpen ? stilo.open : ''}`}>
                 <button className={stilo.toggleButton} onClick={toggleMenu}>
-                    <span className={stilo.bar}></span>
-                    <span className={stilo.bar}></span>
-                    <span className={stilo.bar}></span>
+                    <TfiClose />
                 </button>
                 <nav className={stilo.navMenu}>
                     <ul onClick={toggleMenu}>

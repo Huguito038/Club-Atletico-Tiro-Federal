@@ -88,7 +88,7 @@
 }
 
 @media (max-width: 768px) {
-    .titu{font-size: 40px;
+    .titu{font-size: 35px;
         width: 100%;
         background: linear-gradient(to right, #3991cf,#232d51);
         -webkit-background-clip: text;
@@ -96,7 +96,7 @@
     }
     
     .linea{
-        width: 150px;
+        width: 50px;
         height: 4px;
         background: linear-gradient(to right,#232d51, #3991cf);
     }
@@ -116,7 +116,7 @@
   
     .equipos h3{
         font-weight: 300;
-        font-size: 21px;
+        font-size: 18px;
         margin-left: 0px;
         font-family: 'Blinker', sans-serif;
         margin-right: 0px;

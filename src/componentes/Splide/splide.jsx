@@ -22,11 +22,11 @@ export default function Splides({data}){
                 width:"100%",
                 rewind: true,
                 arrows: false,
-                pagination: true, // Show pagination dots
+                pagination: false, // Show pagination dots
                 gap  :'1rem',
                 } } aria-label="My Favorite Images">
                 {data?.map((path,index)=>(
-                     <SplideSlide key={index} >
+                     <SplideSlide key={index}  >
                         <img className={stilo.img} src={path} alt="" />
                     </SplideSlide>
                 ))}

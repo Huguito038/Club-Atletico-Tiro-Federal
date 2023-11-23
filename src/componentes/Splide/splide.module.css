@@ -30,28 +30,19 @@
 
     .splide_nav{
         display: block;
-        width: 100%;
+        width: 120vw;
+        height: auto;
+        margin-left: -10vw;
     }
     .conte{
         width: 100%;
         height: auto;
-        margin-left: 0px;
+        margin-left: 0;
     }
-    .triang::after {
-        display: none;
-      }
-      
-    .triang::before{
-        display: none;
-    }
-
+  
     .img{
-        
         width: 100%;
     }
-     .triang{
-        width: 100%;
-     }
 
 
 }

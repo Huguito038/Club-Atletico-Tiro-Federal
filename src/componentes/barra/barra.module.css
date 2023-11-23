@@ -16,8 +16,8 @@ height: 80px;
 display: flex;
 align-items: center;
 position: sticky;
+overflow: hidden;
 top:0;
-width: 100%;
 z-index: 9990;
 background: linear-gradient(#3991cf,#232d51bb);
 box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
@@ -29,7 +29,7 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
   display: flex;
   align-items: center;
   font-size: 10px;
-  margin-left: 100px;
+  margin-left: 6vw;
   font-family: 'Blinker', sans-serif;
   font-weight: normal;
   color: white;
@@ -55,20 +55,19 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
 }
 
 .contenedor_botones{
-    display: flex  ;
-    width: 100px;
+    display: flex ;
     height:100%;
     text-align: center;
 }
 
 .boton{
     height: 100%;
-    width: 14vw;
+    width:13vw;
     background-color: transparent;
     border: none;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 26px;
+    font-size: 1.9vw;
     letter-spacing: 1px;
     transition: 0.5s ease all;
 }
@@ -160,6 +159,8 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
         border: none;
         margin-top: 0px;
         margin-left: 1vw;
+        font-size: 35px;
+        color: white;
         cursor: pointer;
         padding: 10px;
         display: block;

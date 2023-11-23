@@ -371,7 +371,6 @@
     .contenedor_novedades_izq img{
         width: auto;
         height: 250px;
-       
         right: 0;
         left: 0;
         margin: auto;
@@ -392,6 +391,51 @@
     
 }
 
+@media (max-height: 420px){
+    .estadio1{
+        color: rgb(255, 255, 255); 
+        z-index: 10;
+        margin-left: 0;
+        margin-top: 30vh;
+        font-size: 5vw;
+        text-shadow: 2px 2px 5px black;
+        font-family: 'Blinker', sans-serif;
+    }
+    
+    .estadio{
+        background: linear-gradient(to bottom,#475eaa,#46b1fd);
+        -webkit-background-clip: text;
+        color: transparent; 
+        margin-left: 0;
+        margin-top: -7vh;
+        z-index: 10;
+        font-size: 8vw;
+        font-family: 'Blinker', sans-serif;
+        
+    }
+    .titu2{
+        font-size: 50px;
+        }
 
-
+    .titu{
+        font-size: 50px;
+        }
+    .contenedor_novedades_izq{
+            overflow: hidden;
+            height: 85vh;
+            display: block;
+            color: white;
+            width: 100%;
+        }
+    .contenedor_novedades_izq img{
+            width: auto;
+            height: 300px;
+            right: 0;
+            top:25vh;
+            left: 0;
+            margin: auto;
+            box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
+        
+        }
+}
 

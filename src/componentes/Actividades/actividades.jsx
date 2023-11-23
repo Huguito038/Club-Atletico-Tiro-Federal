@@ -23,7 +23,7 @@ export default function Actividades (){
                 </div>
                 <div className={stilo.actividades}>
                     <Link to="/actividades/teakwondo">
-                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
+                        <div  className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={taekwondo} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>TEAKWONDO</h2>
@@ -31,7 +31,7 @@ export default function Actividades (){
                         </div>
                     </Link>
                     <Link to="/actividades/acrotelas">
-                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
+                        <div  className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={telas} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>ACROTELAS</h2>
@@ -39,7 +39,7 @@ export default function Actividades (){
                         </div>
                     </Link>
                     <Link to="/actividades/pilates">
-                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
+                        <div  className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={pilates} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>PILATES</h2>
@@ -47,7 +47,7 @@ export default function Actividades (){
                         </div>
                     </Link>
                     <Link to="/actividades/patin">
-                        <div  data-aos="zoom-in-up"className={stilo.cont_deporte}>
+                        <div className={stilo.cont_deporte}>
                             <img className={stilo.img_fondo} src={patin} alt="" />
                             <div className={stilo.barra_deporte}>
                                 <h2>PATIN</h2>
