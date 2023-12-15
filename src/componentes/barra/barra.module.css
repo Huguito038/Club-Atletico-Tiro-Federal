@@ -98,6 +98,7 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
   
   .toggleButton {
     display: none;
+    margin-top: 5px;
   }
   
   .bar {
@@ -135,15 +136,7 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
     color: white;
     font-size: 18px;
   }
-  .escudo_nav{
-    width: 50vw;
-    position: absolute;
-    top: 50vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-  }
+ 
 
 @media (max-width: 868px) {
     .navbar {
@@ -157,7 +150,6 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
     .toggleButton {
         background: none;
         border: none;
-        margin-top: 0px;
         margin-left: 1vw;
         font-size: 35px;
         color: white;
@@ -209,9 +201,6 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
     padding-top: 1vw;
     height: 14vh;
   }
-  .escudo_nav{
-    display: none;
-  }
   .bar_{
     display: block;
     width: 3vw;
@@ -238,7 +227,6 @@ box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
 .toggleButton {
     background: none;
     border: none;
-    margin-top: 0px;
     margin-left: 1vw;
     cursor: pointer;
     padding: 10px;

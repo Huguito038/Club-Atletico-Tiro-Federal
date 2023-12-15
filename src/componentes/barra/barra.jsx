@@ -41,7 +41,7 @@ export default function Barra() {
                         <Link to="/futbol"><li>futbol</li></Link>
                         <Link to="/contacto"><li>Contacto</li></Link>
                     </ul>
-                    <img src={escudo} alt="" className={stilo.escudo_nav}/>
+                  
                 </nav>
             </div>
                 <div className={stilo.club}>

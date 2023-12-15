@@ -27,7 +27,7 @@ export default function Splides({data}){
                 } } aria-label="My Favorite Images">
                 {data?.map((path,index)=>(
                      <SplideSlide key={index}  >
-                        <img className={stilo.img} src={path} alt="" />
+                        <img loading="lazy" className={stilo.img} src={path} alt="" />
                     </SplideSlide>
                 ))}
             </Splide>
@@ -40,7 +40,7 @@ export default function Splides({data}){
                     updateOnMove:true,
                     perPage:2,
                     drag:true,
-                    interval:3000,
+                    interval:2000,
                     rewind: true,
                     width:"100%",
                     arrows: true, // Show arrows
@@ -49,7 +49,7 @@ export default function Splides({data}){
                     } } aria-label="My Favorite Images">
                     {data?.map((path,index)=>(
                         <SplideSlide key={index} >
-                            <img className={stilo.img} src={path} alt="" />
+                            <img loading="lazy"className={stilo.img} src={path} alt="" />
                         </SplideSlide>
                     ))}
                 </Splide>

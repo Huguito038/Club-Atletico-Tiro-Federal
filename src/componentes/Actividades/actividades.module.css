@@ -106,8 +106,8 @@
         margin-bottom: 100px;
     }
     .cont_deporte{
-        width: 100vw;
-        height: 40vh;
+        width: 75vw;
+        height: 30vh;
         position: relative;
         overflow: hidden;
         top: 0;
@@ -123,7 +123,7 @@
     }
     .barra_deporte{
         width: 100%;
-        height: 30%;
+        height: 20%;
         background-color: #3991cf;
         position: absolute;
         bottom: 0px;
@@ -132,9 +132,9 @@
     
     .barra_deporte h2{
         margin-left: 2vw;
-        font-size: 5vh;
+        font-size: 3vh;
         font-family: 'Poppins', sans-serif;
-        margin-top: 2.5vh;
+        margin-top: 1vh;
         color: white;
         text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.452);
     }

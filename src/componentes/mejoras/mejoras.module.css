@@ -225,8 +225,8 @@
         right: 0;
         left: 0;
         margin: auto;
-        width: 45vw;
-        height: 60vh;
+        width: 300px;
+        height: 190px;
         position: relative;
         transform-style: preserve-3d;
         transition: all 1.5s ease;

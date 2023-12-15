@@ -351,6 +351,9 @@
         box-shadow: 0 2px 20px #0003, 0 4px 4px #00000024, 0 4px 2px -4px #0000001f;
     
     }
+    .mapa{
+        width: 100vw;
+    }
 
 }
 
